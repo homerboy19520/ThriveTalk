@@ -1,0 +1,12 @@
+.help {
+  font-family: "Larsseit";
+
+  &__title {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: rgba(34, 53, 111, 0.5);
+    margin-bottom: 24px;
+  }
+}
