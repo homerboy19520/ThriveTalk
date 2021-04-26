@@ -1,0 +1,48 @@
+.contact-us {
+
+  font-family: Larsseit;
+  display: flex;
+  color: #FFFFFF;
+
+  &__wrapper {
+    background-color: #22356F;
+    padding: 103px 0 45px 180px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 230px;
+  }
+
+
+  &__title {
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    margin-bottom: 75px;
+  }
+  
+
+  &__subtitle {
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.005em;
+    font-weight: 400;
+    margin-bottom: 55px;
+    width: 62%;
+  }
+
+  &__subtext {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: #62D0DF;
+    text-transform: uppercase;
+  }
+}

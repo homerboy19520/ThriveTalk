@@ -20,7 +20,8 @@
 
     &_short {
       margin-bottom:0;
-      grid-template-columns: repeat(3,480px);
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 480px;
       height: 960px;
   }
 }
@@ -52,9 +53,32 @@
       background-color:#62D0DF;
     }
 
+
+    &_navy-blue {
+      background-color:#22356F ;
+    }
+
     &_blue {
       background-color:#0052C1 ;
     }
+
+    &_strawberry {
+      background-image: url('/img/strawberry.png');
+      background-repeat: no-repeat;
+    }
+
+    &_turquoise {
+      background-color:#62D0DF ;
+    }
+
+    &_white-purple {
+      background-color:#DEE1FF ;
+    }
+
+    &_purple {
+      background-color:#8F00FF ;
+    }
+
 
     &::before {
       content: "";
