@@ -1,16 +1,23 @@
 .also {
-  
+
   font-family: "Larsseit";
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
-  &__wrapper-main {
+
+  &__img {
+    height: auto;
+    width: 480px;
+  }
+
+  &__wrapper-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: flex-start;
     padding-left: 106px;
+    padding-top: 113px;
+    padding-bottom: 60px;
   }
   
   &__title {
@@ -21,7 +28,6 @@
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
-    padding-top: 113px;
 
   }
 
@@ -33,19 +39,13 @@
     font-weight: 700;
     width: 80%;
 
-  &_marker {
-    color: #6CD3E1;
-  }
+    &_marker {
+      color: #6CD3E1;
+    }
 
   }
+}
 
-  &__text {
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 0.1em;
-    color: #FAB63E;
-    text-transform: uppercase;
-    padding-bottom: 46px;
-    font-weight: 700;
-  }
+.header__button_also {
+  padding-bottom: 46px;
 }

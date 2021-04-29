@@ -1,0 +1,56 @@
+.site-button {
+
+  font-size: 16px;
+  color: #FAB63E;
+  font-weight: 700;
+  background:transparent;
+  border: transparent;
+  border-width: 2px;
+  border-style: solid;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all .4s ease-out, color .4s ease-out;
+  cursor: pointer;
+  width: 158px;
+  padding: 16px 9px;
+
+  &:hover {
+    border-color: #F9B640;
+  }
+
+  &_solid {
+    color: #FFFFFF;
+    background: #F9B640;
+    padding: 14px 32px;
+    
+    &:hover {
+      color: #F9B640;
+      background: transparent;
+      border-color: #F9B640;
+    }
+  }
+
+  &_contact-us {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: #62D0DF;
+    padding: 14px 24px;
+    border-radius: 30px;
+    border-color:#62D0DF;
+    opacity: 1;
+    
+    &:hover {
+      color: #62D0DF;
+      background: transparent;
+      border-color: #62D0DF;
+    }
+  }
+
+  &_help {
+    color: #62D0DF;
+      &:hover {
+      border-color: #62D0DF;
+      }
+  }
+}

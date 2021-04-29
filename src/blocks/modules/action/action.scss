@@ -1,42 +1,38 @@
-.action {
+  .action {
+  
+  &__list {
+    font-family: "Larsseit";
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 240px;
+    margin: 0;
+    padding: 0;
+    height: 480px;
+    list-style: none;
+  }
+  &__title {
+    color: #22356F;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 30px;
+  }
 
-  font-family: "Larsseit";
-  font-weight: 400;
-  letter-spacing: -0.03em;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 240px;
-  margin: 0;
-  padding: 0;
-  height: 480px;
-  list-style-type: none;
+  &__text {
+    color: rgba(34, 53, 111, 0.5);
+    font-size: 16px;
+    line-height: 25px;
+  }
 
-  &-list {
-    
+  &__wrapper {
+    max-width: 280px;
+  }
+
+  &__item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    &__title {
-      color: #22356F;
-      font-size: 28px;
-      line-height: 33px;
-      margin-bottom: 30px;
-    }
-
-    &__text {
-      color: rgba(34, 53, 111, 0.5);
-      font-size: 16px;
-      line-height: 25px;
-    }
-
-    &__wrapper {
-      max-width: 280px;
-    }
-
-
   }
-
-
 }
