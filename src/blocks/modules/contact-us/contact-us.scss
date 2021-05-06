@@ -9,18 +9,18 @@
     padding: 103px 0 45px 180px;
   }
 
-  &__text {
+  &__title {
     font-size: 16px;
     line-height: 12px;
     letter-spacing: 0.06em;
     font-weight: 400;
     margin: 0;
     text-transform: uppercase;
-    margin-bottom: 230px;
+    margin-bottom: 100px;
   }
 
 
-  &__title {
+  &__text {
     font-size: 64px;
     line-height: 94px;
     letter-spacing: -0.01em;
@@ -29,12 +29,17 @@
   }
   
 
-  &__subtitle {
+  &__description {
     font-size: 36px;
     line-height: 53px;
     letter-spacing: -0.005em;
     font-weight: 400;
     margin-bottom: 55px;
     width: 62%;
+  }
+
+  &__picture {
+    width: 480px;
+    height: 100%;
   }
 }

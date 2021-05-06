@@ -3,6 +3,23 @@ body {
 }
 .container {
   padding-left: 179px;
+  
+  @media (max-width: 1200px ) {
+    padding-left: 7%;
+  }
+
+  @media (max-width: 1200px ) {
+    padding-left: 13%;
+  }
+
+  @media (max-width: 400px ) {
+    padding-left: 6%;
+  }
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 p {
