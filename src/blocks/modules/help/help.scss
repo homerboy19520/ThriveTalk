@@ -1,5 +1,10 @@
 .help {
   font-family: "Larsseit";
+  padding: 0px;
+
+  @media(max-width: 1000px) {
+    padding-left: 0;
+  }
 
   &__title {
     font-size: 16px;

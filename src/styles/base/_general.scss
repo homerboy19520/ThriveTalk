@@ -1,19 +1,21 @@
 body {
   font-family: Larsseit;
 }
+
+.main {
+  overflow: hidden;
+}
+
 .container {
   padding-left: 179px;
   
   @media (max-width: 1200px ) {
-    padding-left: 7%;
-  }
-
-  @media (max-width: 1200px ) {
-    padding-left: 13%;
+    padding-left: 70px;
   }
 
   @media (max-width: 400px ) {
-    padding-left: 6%;
+    padding-left: 45px;
+    padding-right: 8px;
   }
 }
 

@@ -1,6 +1,18 @@
 .site-block {
   font-family: "Larsseit";
 
+  &__wrapper {
+    @media(max-width: 1440px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media(max-width: 510px) {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+
   &__title {
     font-size: 16px;
     line-height: 19px;
@@ -12,18 +24,29 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 360px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-auto-flow: dense;
     padding-left: 0;
     margin: 0;
     margin-bottom: 120px;
+    
+    @media(max-width: 1440px) {
+      width: 77%;
+      grid-gap: 1em;
+    }
+
+    @media(max-width: 1000px) {
+      width: 440px;
+    }
+
+  
     &_short {
-      margin-bottom:0;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 480px;
-      height: 960px;
+      @media(min-width: 1441px) {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+    }
   }
-}
+
   &__item {
     color: #FFFFFF;
     font-weight: 700;
@@ -33,9 +56,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 110px;
     position: relative;
-    
+    padding: 3em 1em 6em 1em;
+
+    @media(max-width: 1000px) {
+      padding: 1em 1em 1em 1em;
+    }
+
+    @media(max-width: 510px) {
+      font-size: 18px;
+      line-height: 19px;
+    }
+
     &_short {
       padding-bottom:0;
     }
@@ -64,6 +96,7 @@
     &_strawberry {
       background-image: url('/img/strawberry.png');
       background-repeat: no-repeat;
+      background-size: cover;
     }
 
     &_turquoise {
@@ -78,33 +111,36 @@
       background-color:#8F00FF ;
     }
 
+    &::before {
+      content: "";
+      position: absolute;
+      width: 53%;
+      height: 1px;
+      background-color: #FFFF;
+      top: 22%;
+      opacity: 0.6;
+
+      @media(max-width: 510px) {
+        width: 30%;
+        top: 16%;
+      }
+    }
+  }
+
+  &__item-text {
+    
+    cursor: pointer;
+    position: relative;
 
     &::before {
       content: "";
       position: absolute;
-      width: 250px;
-      height: 1px;
-      background-color: #FFFF;
-      left: 120px;
-      top: 80px;
-      opacity: 0.6;
+      width: 9px;
+      height: 9px;
+      background-color: #E9B730;
+      border-radius: 50%;
+      left: -23px;
+      top: 8px;
     }
   }
-
-    &__item-text {
-      
-      cursor: pointer;
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 9px;
-        height: 9px;
-        background-color: #E9B730;
-        border-radius: 50%;
-        left: -23px;
-        top: 8px;
-      }
-    }
 }
