@@ -1,12 +1,35 @@
 .contact-us {
-
   font-family: Larsseit;
-  display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
+  background-color: #22356f;
 
   &__wrapper {
-    background-color: #22356F;
-    padding: 103px 0 45px 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    padding-top: 103px;
+    padding-bottom: 45px;
+    width: 700px;
+
+    @media (max-width: 1410px) {
+      padding-left: 60px;
+    }
+
+    @media (max-width: 1200px) {
+      width: 500px;
+    }
+
+    @media (max-width: 1000px) {
+      width: 340px;
+      padding: 30px 0 17px 60px;
+    }
+
+    @media (max-width: 660px) {
+      width: 250px;
+      padding-left: 35px;
+    }
   }
 
   &__title {
@@ -16,30 +39,95 @@
     font-weight: 400;
     margin: 0;
     text-transform: uppercase;
-    margin-bottom: 100px;
-  }
+    padding-bottom: 220px;
 
+    @media (max-width: 1410px) {
+      padding-bottom: 100px;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 13px;
+      line-height: 9px;
+    }
+
+    @media (max-width: 1000px) {
+      padding-bottom: 53px;
+    }
+
+    @media (max-width: 760px) {
+      padding-bottom: 31px;
+    }
+  }
 
   &__text {
     font-size: 64px;
     line-height: 94px;
     letter-spacing: -0.01em;
     font-weight: 700;
-    margin-bottom: 75px;
+    padding-bottom: 75px;
+
+    @media (max-width: 1000px) {
+      font-size: 40px;
+      line-height: 56px;
+    }
+
+    @media (max-width: 760px) {
+      font-size: 28px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 760px) {
+      padding-bottom: 20px;
+    }
   }
-  
 
   &__description {
     font-size: 36px;
     line-height: 53px;
     letter-spacing: -0.005em;
     font-weight: 400;
-    margin-bottom: 55px;
-    width: 62%;
+    padding-bottom: 55px;
+
+    @media (max-width: 1000px) {
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    @media (max-width: 760px) {
+      font-size: 18px;
+      line-height: 43px;
+    }
+
+    @media (max-width: 760px) {
+      padding-bottom: 20px;
+    }
   }
 
   &__picture {
     width: 480px;
     height: 100%;
+
+    @media (max-width: 1410px) {
+      width: auto;
+    }
+  }
+
+  &__container {
+    @media (max-width: 1410px) {
+      width: auto;
+      height: 700px;
+    }
+
+    @media (max-width: 1000px) {
+      height: 500px;
+    }
+
+    @media (max-width: 760px) {
+      height: 340px;
+    }
+
+    @media (max-width: 510px) {
+      display: none;
+    }
   }
 }

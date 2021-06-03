@@ -6,22 +6,26 @@ body {
   overflow: hidden;
 }
 
+.general_container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .container {
   padding-left: 179px;
-  
-  @media (max-width: 1200px ) {
+
+  @media (max-width: 1200px) {
     padding-left: 70px;
   }
 
-  @media (max-width: 400px ) {
+  @media (max-width: 400px) {
     padding-left: 45px;
     padding-right: 8px;
   }
 }
 
-.wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
+.short-container {
+  padding-left: 106px;
 }
 
 p {

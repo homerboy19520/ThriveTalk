@@ -1,13 +1,14 @@
 .why {
-  background-color:#62D0DF;
-  color: #FFFFFF;
+  background-color: #62d0df;
+  color: #ffffff;
   font-family: Larsseit;
 
-  &__wrapper { 
+  &__wrapper {
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 510px) {
+    @media (min-width: 1300px) {
+      padding-left: 0;
     }
 
     @media (max-width: 510px) {
@@ -18,17 +19,17 @@
   &__content {
     display: flex;
     flex-direction: column;
-    margin-top: 151px; 
+    margin-top: 151px;
     width: 482px;
-  
-    @media (max-width: 1300px) {
-    margin-top: 20px;
+
+    @media (max-width: 1299px) {
+      margin-top: 20px;
     }
 
     @media (max-width: 1000px) {
       width: 505px;
-      }
-  
+    }
+
     @media (max-width: 700px) {
       width: 412px;
     }
@@ -58,7 +59,7 @@
 
     @media (max-width: 1000px) {
       font-size: 18px;
-      }
+    }
 
     @media (max-width: 510px) {
       font-size: 18px;
@@ -89,7 +90,7 @@
     @media (max-width: 510px) {
       font-size: 26px;
       line-height: 16px;
-    } 
+    }
 
     @media (max-width: 400px) {
       font-size: 23px;
@@ -101,13 +102,13 @@
     width: 533px;
     height: 604px;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1299px) {
       width: 333px;
       height: 404px;
     }
 
     @media (max-width: 1000px) {
-    display: none;
+      display: none;
     }
   }
 

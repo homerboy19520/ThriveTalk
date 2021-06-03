@@ -9,7 +9,7 @@
   border-style: solid;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  transition: all .4s ease-out, color .4s ease-out;
+  transition: border-color .4s ease-out, color .4s ease-out;
   cursor: pointer;
   width: 158px;
   padding: 16px 9px;
@@ -55,8 +55,19 @@
 
   &_help {
     color: #62D0DF;
-      &:hover {
-      border-color: #62D0DF;
-      }
+    
+    @media(max-width: 760px) {
+      width: 100%;
+    }
+
+    &:hover {
+    border-color: #62D0DF;
+    }
+  }
+
+  &_blue {
+    @media (max-width: 760px) {
+      width: 100%;
+    }  
   }
 }
