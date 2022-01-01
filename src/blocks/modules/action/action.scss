@@ -1,0 +1,109 @@
+.action {
+  margin: 0 auto;
+
+  @media (max-width: 760px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    font-family: "Larsseit";
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(377px, 1fr));
+    max-width: 1388px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width: 1500px) {
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    }
+
+    @media (max-width: 760px) {
+      max-width: none;
+    }
+  }
+
+  &__title {
+    color: #22356f;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 40px;
+
+    @media (max-width: 1000px) {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    color: rgba(34, 53, 111, 0.5);
+    font-size: 16px;
+    line-height: 25px;
+
+    @media (max-width: 1000px) {
+      font-size: 14px;
+      line-height: 23px;
+    }
+
+    @media (max-width: 760px) {
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+    @media (max-width: 510px) {
+      font-size: 20px;
+      line-height: 29px;
+    }
+  }
+
+  &__wrapper {
+    max-width: 280px;
+
+    @media (max-width: 760px) {
+      max-width: 490px;
+    }
+
+    @media (max-width: 510px) {
+      max-width: 307px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+
+    &_start {
+      align-items: flex-start;
+
+      @media (max-width: 1400px) {
+        align-items: center;
+      }
+    }
+
+    &_center {
+      align-items: center;
+
+      @media (max-width: 1400px) {
+        align-items: center;
+      }
+    }
+
+    &_end {
+      align-items: flex-end;
+
+      @media (max-width: 1400px) {
+        align-items: center;
+      }
+    }
+  }
+}

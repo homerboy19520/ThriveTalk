@@ -1,0 +1,30 @@
+.help {
+  font-family: "Larsseit";
+  padding: 0px;
+  margin-bottom: 120px;
+
+  &__wrapper {
+    margin: 0 auto;
+
+    @media (max-width: 760px) {
+      width: 490px;
+    }
+
+    @media (max-width: 510px) {
+      width: 307px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding-left: 0;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: rgba(34, 53, 111, 0.5);
+    margin-bottom: 24px;
+  }
+}
